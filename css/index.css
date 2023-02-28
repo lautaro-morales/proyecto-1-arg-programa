@@ -1,0 +1,162 @@
+body {
+    font-family: Helvetica, arial, sans-serif;
+    margin: 0;
+}
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+header {
+    background: #609966;
+    border-bottom: 2px solid #38693c;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 10vh;
+}
+
+footer {
+    background: #609966;
+    border-top: 2px solid #38693c;
+    text-align: center;
+    height: 10vh;
+}
+
+.navbar {
+    border-bottom: 2px solid #38693c;
+    background-color: #9DC08B;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-links li {
+    height: 100%;
+}
+
+.nav-links button {
+    border: none;
+    background-color: #9DC08B;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.active-button {
+    color: rgb(255, 208, 121);
+}
+
+.container-secciones {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    height: 80vh;
+    background-color: #EDF1D6;
+}
+
+.container-secciones h1 {
+    text-align: center;
+}
+
+.container-secciones div {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.descripcion {
+    grid-column: 1 / 2;
+}
+
+.descripcion section {
+    width: 50%;
+}
+
+.presentacion {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.presentacion img {
+    padding: 4px;
+    border: 5px #609966 solid;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.lista-lenguajes {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.lista-lenguajes li{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.fa-square-js {
+    color: #F7E018;
+}
+
+.fa-node-js {
+    color: #68A063;
+}
+
+.fa-angular {
+    color: #DD0031;
+}
+
+.fa-php {
+    color: #787CB4;
+}
+
+.fa-html5 {
+    color: #FE4C1E;
+}
+
+.fa-css3-alt {
+    color: #2965F1;
+}
+
+.descripcion .post-exp-previa {
+    align-content: flex-start;
+}
+
+.datos-contacto {
+    border-left: 2px solid #38693c;
+    background: #9DC08B;
+    grid-column: 2 / 3;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.datos-contacto ul {
+    list-style: none;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.redes-sociales i {
+    color: black;
+}
+
+.inactive-cv-section {
+    display: none;
+}
