@@ -2,6 +2,16 @@ let cv_sections = Array.from(document.getElementsByClassName('descripcion')[0].g
 let section_buttons = Array.from(document.getElementsByClassName('section-nav-button'));
 let og_display = [];
 
+let skills_icons = Array.from(document.getElementsByClassName('lista-lenguajes')[0].getElementsByTagName('li'));
+let overlays = Array.from(document.getElementsByClassName('overlay'));
+
+for (icon of skills_icons) {
+    icon.addEventListener('mouseover', show_overlay);
+    icon.addEventListener('mouseleave', hide_overlay);
+}
+
+console.log(skills_icons);
+
 for (section of cv_sections) {
     og_display.push(section.style);
 }
@@ -26,4 +36,12 @@ function toggle_sections(index) {
             section_buttons[i].classList.add('active-button');
         }
     }
+}
+
+function show_overlay() {
+    this.children[0].style.opacity = 1;
+}
+
+function hide_overlay() {
+    this.children[0].style.opacity = 0;
 }
